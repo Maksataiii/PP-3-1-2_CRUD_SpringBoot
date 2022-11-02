@@ -1,6 +1,5 @@
 package com.springboot.spring.controller;
 
-import com.mysql.cj.jdbc.jmx.LoadBalanceConnectionGroupManager;
 import com.springboot.spring.model.User;
 import com.springboot.spring.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +13,7 @@ import java.util.List;
 
 @Controller
 public class UserController {
-    private final UserService userService;
+    private UserService userService;
 
     @Autowired
     public UserController(UserService userService) {
